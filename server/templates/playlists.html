@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Playlists</title>
+    </head>
+    <body>
+        <div>Your playlist song list: </div>
+        <br>
+        {% for item in songs %}
+            <a href="{{ url }}{{ item[0] }}"+>{{ item[1] }}</a>
+            <br>
+        {% endfor%}
+        <br/>
+        <div>click here back to the home page</div>
+        <form method="post">
+            <input type="submit" name="back_button" value="back">
+        </form>
+    </body>
+</html>
